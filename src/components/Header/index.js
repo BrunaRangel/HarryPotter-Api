@@ -11,7 +11,7 @@ export function Header() {
             <a href="/Gryffindor">Grifinória</a>
             <a href="/Slytherin">Sonserina</a>
             <a href="/Hufflepuff">Lufa-Lufa</a>
-            <a href="">Corvinal</a>
+            <a href="/Ravenclaw">Corvinal</a>
         </nav> 
     </section>
   )
