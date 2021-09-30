@@ -8,7 +8,7 @@ export function Header() {
             <a href="">Sobre</a>
         </nav> 
         <nav> 
-            <a href="">Grifinória</a>
+            <a href="/Gryffindor">Grifinória</a>
             <a href="">Sonserina</a>
             <a href="">Lufa-Lufa</a>
             <a href="">Corvinal</a>
