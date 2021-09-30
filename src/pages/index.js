@@ -1,10 +1,12 @@
 import * as React from "react"
-import  Header from '../components/Header/index'
+import  {Header} from '../components/Header'
+import {Main} from '../components/Main'
 
 const IndexPage = () => (
   <section>
     <Header />
-    <p>Rangel</p>
+    <p>Ooooi</p>
+    <Main />
   </section>
 )
 
