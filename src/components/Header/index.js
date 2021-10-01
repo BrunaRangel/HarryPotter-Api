@@ -1,18 +1,21 @@
 import React from 'react'
+import * as B from '../style/header'
+import { Link } from 'gatsby'
 
 export function Header() {
   return (
-    <section style={{width:"100%", height:'15vh', display:'flex', gap:'5rem'}}>
-        <nav> 
-            <a href="/">Home</a>
-            <a href="">Sobre</a>
-        </nav> 
-        <nav> 
-            <a href="/Gryffindor">Grifinória</a>
-            <a href="/Slytherin">Sonserina</a>
-            <a href="/Hufflepuff">Lufa-Lufa</a>
-            <a href="/Ravenclaw">Corvinal</a>
-        </nav> 
-    </section>
+    <B.Container>
+        <B.BoxTitle>
+          <B.Title>Harry Potter</B.Title>
+        </B.BoxTitle>
+        <B.Nav> 
+          <Link to="/" style={{color:'#fff',textDecoration: 'none'}}>Home</Link>
+          <Link to="" style={{color:'#fff',textDecoration: 'none'}}>Personagens</Link>
+          <Link to="/Gryffindor" style={{color:'#fff',textDecoration: 'none'}}>Grifinória</Link>
+          <Link to="/Slytherin" style={{color:'#fff',textDecoration: 'none'}}>Sonserina</Link>
+          <Link to="/Hufflepuff" style={{color:'#fff',textDecoration: 'none'}}>Lufa-Lufa</Link>
+          <Link to="/Ravenclaw" style={{color:'#fff',textDecoration: 'none'}}>Corvinal</Link>
+        </B.Nav> 
+    </B.Container>
   )
 }
