@@ -7,7 +7,7 @@ justify-content: center;
 flex-direction: column;
 width:100%;
 height:30vh;
-border-bottom: 2px solid #fff;
+border-bottom: 2px solid #ffffff10;
 `
 
 export const BoxTitle = styled.div`
