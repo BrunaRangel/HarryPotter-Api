@@ -71,8 +71,7 @@ export function Main() {
                     em Hogwarts. Os rádios, porém, são uma exceção. J. K. Rowling
                     explica o fato dizendo que os rádios em Hogwarts não são 
                     alimentado com eletricidade, e sim por magia.</B.ParagraphSchool>
-            </B.BoxSchool>
-            
+            </B.BoxSchool>  
         </B.WrapHogwarts>
     </B.Container>
   )
