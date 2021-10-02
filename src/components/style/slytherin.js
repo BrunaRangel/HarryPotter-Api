@@ -26,7 +26,7 @@ height:15vh;
 `
 
 export const Title = styled.h1`
-color:#696969;
+color:#C3BDBD;
 font-size:4rem;
 &:hover {
     font-size:4.5rem;
@@ -43,7 +43,7 @@ gap:5px;
 `
 
 export const Paragraph = styled.p`
-color:#FFf;
+color:#C3BDBD;
 font-size:1.25rem;
 font-weight:600;
 line-height:0px;
@@ -60,7 +60,7 @@ margin-top:2rem;
 `
 
 export const Foundation = styled.p`
-color:#FFF;
+color:#C3BDBD;
 font-size:1.25rem;
 line-height:25px;
 text-indent:1.625rem;

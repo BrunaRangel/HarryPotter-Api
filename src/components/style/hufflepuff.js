@@ -6,10 +6,10 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 width:100%;
-background-color:#0E1A40;
+background-color:#ECB939;
 `
 
-export const WrapRavenclaw = styled.div`
+export const WrapHufflepuff = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
@@ -26,10 +26,10 @@ height:15vh;
 `
 
 export const Title = styled.h1`
-color:#CD7F32;
-font-size:4rem;
+color:#000;
+font-size:4.5rem;
 &:hover {
-    font-size:4.5rem;
+    font-size:5rem;
     font-weight:700;
     }
 `
@@ -43,7 +43,7 @@ gap:5px;
 `
 
 export const Paragraph = styled.p`
-color:#CD7F32;
+color:#000;
 font-size:1.25rem;
 font-weight:600;
 line-height:0px;
@@ -60,7 +60,7 @@ margin-top:2rem;
 `
 
 export const Foundation = styled.p`
-color:#CD7F32;
+color:
 font-size:1.25rem;
 line-height:25px;
 text-indent:1.625rem;
