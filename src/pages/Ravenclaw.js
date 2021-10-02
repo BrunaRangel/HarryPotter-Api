@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { Header } from '../components/Header'
+import { Footer } from '../components/Footer'
 import { api } from '../services/api'
+import * as B from '../components/style/ravenclaw'
+import flag  from '../images/Ravenclaw.jpg'
+
 
 function Ravenclaw() {
 
@@ -13,44 +17,40 @@ function Ravenclaw() {
  },[])
 
   return (
-    <section>
+    <B.Container>
         <Header />
-        <div>
-            <div>
-                <h1>Corvinal</h1>
-            </div>
-            <div>
-                <p >"Ou será a velha e sábia Corvinal,</p>
-                <p>A casa dos que têm a mente sempre alerta,</p>
-                <p>Onde os homens de grande espírito e saber</p>
-                <p>Sempre encontrarão companheiros seus iguais."</p>
-                <p>— O Chapéu Seletor</p>
-            </div>  
-            <div>
-                <p>A Corvinal, fundada por Rowena Ravenclaw,
+        <B.WrapRavenclaw>
+            <B.BoxTitle>
+                <B.Title>Corvinal</B.Title>
+            </B.BoxTitle>
+            <B.BoxVerse>
+                <B.Paragraph>"Ou será a velha e sábia Corvinal,</B.Paragraph>
+                <B.Paragraph>A casa dos que têm a mente sempre alerta,</B.Paragraph>
+                <B.Paragraph>Onde os homens de grande espírito e saber</B.Paragraph>
+                <B.Paragraph>Sempre encontrarão companheiros seus iguais."</B.Paragraph>
+                <B.Paragraph>— O Chapéu Seletor</B.Paragraph>
+            </B.BoxVerse>  
+            <B.BoxFoundation>
+                <B.Foundation>A Corvinal, fundada por Rowena Ravenclaw,
                  é uma das quatro casas da Escola de Magia e
                  Bruxaria de Hogwarts. Seus membros, comumente,
                  são caracterizados por sua inteligência, aprendizado
                  e sabedoria. Suas cores são o azul e bronze,
                  o animal emblemático é uma águia e sua fantasma 
                  patrono é a Dama Cinzenta. A casa possui um 
-                 diretor notável, o Mestre de Feitiços Fílio Flitwick.</p>
-                <p>A casa corresponde aproximadamente ao elemento ar,
+                 diretor notável, o Mestre de Feitiços Fílio Flitwick.</B.Foundation>
+                <B.Foundation>A casa corresponde aproximadamente ao elemento ar,
                  e é por essa razão que suas cores foram escolhidas;
                  o azul representa o céu e o bronze pode representar
                  as penas de uma águia, ambos tendo muita relação 
-                 com tal elemento.</p>
-            </div>    
-            <div>
-                {list.slice(10,11).map((item, index) => (
-                    <div key={index}>
-                        <img style={{width:'70px', height:'100px'}} src={item.image} alt=""  />
-                        <p>{item.name}</p>
-                    </div>
-                ))}
-            </div>    
-        </div>
-    </section>
+                 com tal elemento.</B.Foundation>
+            </B.BoxFoundation>    
+            <B.BoxImg>
+               <B.Img src={flag} alt="" />
+            </B.BoxImg>    
+        </B.WrapRavenclaw>
+        <Footer />
+    </B.Container>
   )
 }
 
