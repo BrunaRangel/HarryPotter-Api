@@ -25,7 +25,7 @@ function Characters() {
                 {list.map((item, index) => (
                     <B.BoxKey key={index}>
                         <B.BoxImg>
-                            <img style={{width:'200px', height:'300px'}} src={item.image} alt=""  />
+                            <img style={{width:'215px', height:'300px'}} src={item.image} alt=""  />
                         </B.BoxImg>
                         <B.BoxName>
                             <B.Name>{item.name}</B.Name>

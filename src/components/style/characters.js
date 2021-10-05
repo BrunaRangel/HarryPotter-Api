@@ -29,7 +29,7 @@ font-size:3.5rem;
 
 export const WrapFigure = styled.div`
 display:flex;
-gap:2rem;
+gap:1rem;
 flex-wrap:wrap;
 justify-content:center;
 `
@@ -44,7 +44,7 @@ cursor: point;
 `
 
 export const BoxImg = styled.div`
-width:200px;
+width:215px;
 height:300px;
 display:flex;
 border:6px solid #DAA520;
