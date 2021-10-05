@@ -15,7 +15,7 @@ query {
 `
 
 export default function spells({ data }) {
-    console.log(data)
+    console.log(data.alldata)
   return (
     <div>
         <h1>Erro 404</h1>
