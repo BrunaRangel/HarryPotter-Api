@@ -27,11 +27,19 @@ color:transparent;
 `
 
 export const Nav = styled.nav`
-width: 60%;
+width: 70%;
 height:10vh;
 display: flex;
 justify-content: space-around;
 align-items: center;
 font-size:1.5rem;
+font-weight:600;
 cursor:point;
+`
+export const Link = styled.a`
+color:#FFF;
+text-decoration:none;
+&:hover {
+    color:#6C7B8B;
+}
 `

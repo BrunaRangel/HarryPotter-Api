@@ -14,6 +14,7 @@ query {
 }
 `
 
+
 export default function spells({ data }) {
     console.log(data.alldata)
   return (
