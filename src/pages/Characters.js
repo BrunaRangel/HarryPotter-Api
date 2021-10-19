@@ -21,18 +21,38 @@ function Characters() {
             <B.BoxTitle>
                 <B.Title>Personagens</B.Title>
             </B.BoxTitle>
-            <B.WrapFigure>
-                {list.map((item, index) => (
-                    <B.BoxKey key={index}>
-                        <B.BoxImg>
+            {/* <B.WrapFigure class="flip-container">
+                {list.slice(0,25).map((item, index) => (
+                    <B.BoxKey key={index} class="flipper">
+                        <B.BoxImg class="front">
                             <img style={{width:'215px', height:'300px'}} src={item.image} alt=""  />
                         </B.BoxImg>
                         <B.BoxName>
                             <B.Name>{item.name}</B.Name>
-                        </B.BoxName>                       
+                        </B.BoxName>                      
                     </B.BoxKey>
+                     
                 ))}
-            </B.WrapFigure>    
+            </B.WrapFigure> */}
+
+<B.WrapFigure>
+    {list.slice(0,25).map((item, index) => (
+    <B.WrapKey key={index}>
+        <B.BoxFront style={{}}>
+            <B.BoxImg>
+                <img style={{width:'215px', height:'300px'}} src={item.image} alt=""  />
+            </B.BoxImg>
+            <B.BoxName>
+                <B.Name>{item.name}</B.Name>
+                <B.House>{item.house}</B.House>
+            </B.BoxName>                     
+        </B.BoxFront>
+        <B.BoxBack style={{}}>
+            <p style={{}}>oiuhg</p>
+        </B.BoxBack>
+    </B.WrapKey>
+    ))}
+</B.WrapFigure>
         </B.WrapCharacters>
         <Footer />
     </B.Container>

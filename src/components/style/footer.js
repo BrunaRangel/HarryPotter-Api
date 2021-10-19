@@ -38,6 +38,14 @@ width:100%;
 font-size:0.875rem;
 gap:5px;
 `
+export const Link = styled.a`
+color:#FFF;
+text-decoration:none;
+&:hover {
+    color:#6C7B8B;
+}
+`
+
 export const BoxContact = styled.div`
 display: flex;
 align-items: center;
