@@ -33,7 +33,6 @@ gap:1.5rem;
 flex-wrap:wrap;
 justify-content:center;
 width:100%;
-background-color:#caf;
 `
 
 export const WrapKey = styled.div`
@@ -57,15 +56,6 @@ width: 220px;
 height: 350px;
 backface-visibility: hidden;
 
-`
-
-export const BoxBack = styled.div`
-transform: rotateY(180deg);
-background-color: #DAA520;
-width: 215px;
-height: 350px;
-backface-visibility: hidden;
-border:6px solid #fff;
 `
 
 export const BoxImg = styled.div`
@@ -95,4 +85,45 @@ export const House = styled.p`
 font-size:0.8125rem;
 font-weight:600;
 margin:0px;
+`
+
+export const BoxBack = styled.div`
+transform: rotateY(180deg);
+background-color: #DAA520;
+width: 215px;
+height: 350px;
+backface-visibility: hidden;
+border:6px solid #DAA520;
+display:flex;
+flex-direction:column;
+align-items: center;
+justify-content: center;
+`
+
+export const TextName = styled.p`
+width:80%;
+font-size:2rem;
+font-weight:900;
+text-align:center;
+color:#000;
+margin:0.5rem 0px;
+`
+
+export const BoxText = styled.div`
+width:100%;
+`
+
+export const Text = styled.p`
+font-size:0.875rem;
+font-weight:900;
+color:#000;
+margin-left:0.5rem;
+`
+
+export const Span = styled.span`
+font-size:0.9375rem;
+font-weight:600;
+color:#000;
+margin-left:4px;
+font-family: 'Roboto', sans-serif;
 `

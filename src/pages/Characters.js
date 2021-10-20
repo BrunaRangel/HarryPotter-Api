@@ -21,38 +21,33 @@ function Characters() {
             <B.BoxTitle>
                 <B.Title>Personagens</B.Title>
             </B.BoxTitle>
-            {/* <B.WrapFigure class="flip-container">
+            <B.WrapFigure>
                 {list.slice(0,25).map((item, index) => (
-                    <B.BoxKey key={index} class="flipper">
-                        <B.BoxImg class="front">
+                <B.WrapKey key={index}>
+                    <B.BoxFront style={{}}>
+                        <B.BoxImg>
                             <img style={{width:'215px', height:'300px'}} src={item.image} alt=""  />
                         </B.BoxImg>
                         <B.BoxName>
                             <B.Name>{item.name}</B.Name>
-                        </B.BoxName>                      
-                    </B.BoxKey>
-                     
+                            <B.House>{item.house}</B.House>
+                        </B.BoxName>                     
+                    </B.BoxFront>
+                    <B.BoxBack style={{}}>
+                        <B.TextName>{item.name}</B.TextName>
+                        <B.BoxText>
+                            <B.Text>Date of birth:<B.Span>{item.dateOfBirth}</B.Span></B.Text>
+                            <B.Text>Species:<B.Span>{item.species}</B.Span></B.Text>   
+                            <B.Text>Gender:<B.Span>{item.gender}</B.Span></B.Text>
+                            <B.Text>Ancestry:<B.Span>{item.ancestry}</B.Span></B.Text>
+                            <B.Text>Hair Colour:<B.Span>{item.hairColour}</B.Span></B.Text>
+                            <B.Text>Eye colour:<B.Span>{item.eyeColour}</B.Span></B.Text>         
+                            <B.Text>Patronus:<B.Span>{item.patronus}</B.Span></B.Text>
+                        </B.BoxText>
+                    </B.BoxBack>
+                </B.WrapKey>
                 ))}
-            </B.WrapFigure> */}
-
-<B.WrapFigure>
-    {list.slice(0,25).map((item, index) => (
-    <B.WrapKey key={index}>
-        <B.BoxFront style={{}}>
-            <B.BoxImg>
-                <img style={{width:'215px', height:'300px'}} src={item.image} alt=""  />
-            </B.BoxImg>
-            <B.BoxName>
-                <B.Name>{item.name}</B.Name>
-                <B.House>{item.house}</B.House>
-            </B.BoxName>                     
-        </B.BoxFront>
-        <B.BoxBack style={{}}>
-            <p style={{}}>oiuhg</p>
-        </B.BoxBack>
-    </B.WrapKey>
-    ))}
-</B.WrapFigure>
+            </B.WrapFigure>
         </B.WrapCharacters>
         <Footer />
     </B.Container>
