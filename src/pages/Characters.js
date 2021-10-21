@@ -3,6 +3,8 @@ import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { api } from '../services/api'
 import * as B from '../components/style/characters'
+import GlobalStyle from "../components/style/global ";
+
 
 function Characters() {
 
@@ -16,6 +18,7 @@ function Characters() {
 
   return (
     <B.Container>
+        <GlobalStyle />
         <Header />
         <B.WrapCharacters>
             <B.BoxTitle>

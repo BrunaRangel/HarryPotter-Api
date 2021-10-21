@@ -3,6 +3,7 @@ import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { api } from '../services/api'
 import * as B from '../components/style/slytherin'
+import GlobalStyle from "../components/style/global ";
 import flag  from '../images/Slytherin.jpg'
 
 function Slytherin() {
@@ -17,6 +18,7 @@ function Slytherin() {
 
   return (
     <B.Container>
+        <GlobalStyle />
         <Header />
         <B.WrapSlytherin>
             <B.BoxTitle>

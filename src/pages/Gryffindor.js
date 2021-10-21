@@ -3,6 +3,8 @@ import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { api } from '../services/api'
 import * as B from '../components/style/gryffindor'
+import GlobalStyle from "../components/style/global ";
+
 import flag  from '../images/Gryffindor.jpg'
 
 function Gryffindor() {
@@ -17,6 +19,7 @@ function Gryffindor() {
 
   return (
     <B.Container>
+        <GlobalStyle />
         <Header />
         <B.WrapGryffindor>
             <B.BoxTitle>

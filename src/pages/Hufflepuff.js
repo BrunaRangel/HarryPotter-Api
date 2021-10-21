@@ -3,6 +3,7 @@ import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { api } from '../services/api'
 import * as B from '../components/style/hufflepuff'
+import GlobalStyle from "../components/style/global ";
 import flag  from '../images/Hufflepuff.jpg'
 
 function Hufflepuff() {
@@ -17,6 +18,7 @@ function Hufflepuff() {
 
   return (
     <B.Container>
+        <GlobalStyle />
         <Header />
         <B.WrapHufflepuff >
             <B.BoxTitle>

@@ -3,6 +3,7 @@ import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { api } from '../services/api'
 import * as B from '../components/style/ravenclaw'
+import GlobalStyle from "../components/style/global ";
 import flag  from '../images/Ravenclaw.jpg'
 
 
@@ -18,6 +19,7 @@ function Ravenclaw() {
 
   return (
     <B.Container>
+        <GlobalStyle />
         <Header />
         <B.WrapRavenclaw>
             <B.BoxTitle>
